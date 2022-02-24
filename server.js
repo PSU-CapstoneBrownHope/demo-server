@@ -1,11 +1,7 @@
 require('dotenv').config();
 const express = require('express');
-const airtable = require('airtable');
 const app = express();
 const port = process.env.PORT || 3000;
-const airtableApiKey = process.env.AIRTABLE_API_KEY;
-const baseId = process.env.BASE_ID;
-const base = new airtable({apiKey: airtableApiKey}).base(baseId);
 
 //This is fake airtable data
 const applicationsBank = [
